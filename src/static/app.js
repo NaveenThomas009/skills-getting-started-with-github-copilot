@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
 
+  // copilot addition
   // Add small helper to safely render participant strings
   function escapeHtml(str) {
     return String(str)
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spotsLeft = details.max_participants - details.participants.length;
 
+        // copilot addition
         // Build participants section (pretty, handles empty list)
         let participantsHTML = `<div class="participants"><strong>Participants</strong>`;
         if (!details.participants || details.participants.length === 0) {
